@@ -1,6 +1,3 @@
-#### Introduction
-Lately I have been looking for a good solution for authentication and storage of secrets for my personal projects. I was looking for something that will allow me to store my secrets away from my code, use of top-of-the-line security. This is when I stumbled on HashiCorp's [Vault](https://www.vaultproject.io/). Vault assists you to control access to tokens, passwords, certificates among other stuff. This when combined with your infrastructure makes it easier to carry out a secret audit and makes it easy to detect the source of a leak when it happens.
-
 #### Setting up Vault
 Setting up and installing Vault has to be one of the easiest things ever. In this case I shall be using Ubuntu to show do the set up. 
 First we are going to install pgp for the package signing key
