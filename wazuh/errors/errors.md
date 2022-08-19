@@ -5,3 +5,6 @@ Follow the instructions [here](https://documentation.wazuh.com/current/upgrade-g
 `Failed to reset password. {"status":"FORBIDDEN","message":"Resource 'admin' is read-only."}`
 
 This happens when you try to reset you password. If this is an issue. You can navigate to `/etc/filebeat/filebeat.yml` and change your password from there.
+
+`Kibana server is not ready yet wazuh`
+This happens when you make a change on the configurations. Don't stress, give it 5-10 minutes as the server starts.
