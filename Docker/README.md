@@ -1,5 +1,5 @@
 ### Introduction
-Docker is a tool that utilises virtualisation on the OS level to produce/run a plethora of softwares in a bundle known as containers. Docker runs on a platform known as the docker engine.
+Docker is a tool that utilises virtualisation on the OS level to produce/run a plethora of software in a bundle known as containers. Docker runs on a platform known as the docker engine.
 
 ### Getting started with docker
 #### Running your first docker container
@@ -26,5 +26,5 @@ b152ce1341446623b015c4686b4eded4d7de707d2bf37a7cd216f772163f5a91
 When you visit port 80 on your browser you will see a success page. Now let us break down the command that we ran on terminal.
 
 `-d` : This flag is used to specify that we want this container to run in the background(detached mode). 
-`-p`: This flag maps the container port with our machine port, in this case we want it to run on http which means that we need to first open the internal port 80 and connect it with our machine's port 80. hence `-p 80:80`
-`docker/getting-started`: This is the name od the container we want to run.
+`-p`: This flag maps the container port with our machine port, in this case we want it to run on HTTP which means that we need to first open the internal port 80 and connect it with our machine's port 80. hence `-p 80:80`
+`docker/getting-started`: This is the name of the container we want to run.
