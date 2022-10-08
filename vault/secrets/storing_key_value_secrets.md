@@ -25,7 +25,7 @@ version            1
 ```
 We can now try and edit our secret and add something new
 
-`vault kc put mount=secret name_of_the_secret name=bl4ckro53 occupation=engineer cryptocurrency=SOL`
+`vault kv put mount=secret name_of_the_secret name=bl4ckr053 occupation=engineer cryptocurrency=SOL`
 When we make a modification we are going the following output 
 ```
 == Secret Path ==
