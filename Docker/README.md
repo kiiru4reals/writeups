@@ -8,7 +8,7 @@ To ensure that we have docker correctly installed we can run the getting started
 `docker run -d -p 80:80 docker/getting-started`
 Note: <b>You have to be superuser to do this</b>
 Once you run this command, you should get the following output
-```
+```sh
 Unable to find image 'docker/getting-started:latest' locally
 latest: Pulling from docker/getting-started
 df9b9388f04a: Pull complete 
