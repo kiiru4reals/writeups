@@ -19,16 +19,22 @@ From the following we can assume the following:
 
 ### Enumeration
 We can start by performing an nmap scan on the target to get the first 15000 ports, the operating system and probably output the results in a file as this is a long time assignment. We can start nmap but we get that the IP address cannot be pinged from the internet as shown below
-![[Pasted image 20230324201851.png]]
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/nmap_scan.png?raw=true)
+
 We can then do the same scan but add a `-Pn` flag, what this flag does is that it assumes that the host is online.
 
 When we visit the IP address on the browser we are redirected to the following web address
-![[unreachable_site.png]]
+
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/unreachable_site.png?raw=true)
+
 To view this site, we can add the domain to our `/etc/hosts` file when we reload the browser we shaall get the following
-![[ssl_warning.png]]
+
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/ssl_warning.png?raw=true)
+
 We can then scroll through Thomas' website and get his phone number at the bottom of the web page.
 From our port scan we were able to establish that port 10,000 runs Miniserv 1.890 (Webmin httpd), we can google this to get possible exploits 
-![[duckuckgo_results.png]]
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/duckduckgo_results.png?raw=true)
+
 From the above search we get possible exploits that we can use.
 ### Exploitation: Exploiting public facing application
 We can use the RCE that we found during the enumeration stage. We can use the version written by [Muirland Oracle](https://github.com/MuirlandOracle/CVE-2019-15107) in this case. Once you clone the repository we can install the requirements using 
@@ -40,11 +46,14 @@ pip install -r requirements.txt
 sudo chmod +x ./file_name.py
 ```
 When we run the python script we get the following:
-![[writeups/wreath/screenshots/initial_access.png]]
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/initial_access.png?raw=true)
+
 Voila! We got a reverse shell on the target server. We can then answer the questions on the room and try obtain a reverse shell by typing `shell` on the terminal session. We then need to enter our machine's IP address and desired port (I chose 1234) and I spawned a netcat listener on another terminal.
-![[reverse_shell.png]]
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/reverse_shell.png?raw=true)
+
 Now that we have a permanent shell we can then proceed to look for the root password hash in the shadow file as shown below
-![[root_user_hash.png]]
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/root_user_hash.png?raw=true)
+
 We can then proceed to get the private SSH key for the server so as to be able to maintain our access. 
-![[ssh_private_key.png]]
+![image](https://github.com/kiiru4reals/writeups/blob/main/wreath/screenshots/ssh_private_key.png?raw=true)
 
