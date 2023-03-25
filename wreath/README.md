@@ -30,3 +30,21 @@ We can then scroll through Thomas' website and get his phone number at the botto
 From our port scan we were able to establish that port 10,000 runs Miniserv 1.890 (Webmin httpd), we can google this to get possible exploits 
 ![[duckuckgo_results.png]]
 From the above search we get possible exploits that we can use.
+### Exploitation: Exploiting public facing application
+We can use the RCE that we found during the enumeration stage. We can use the version written by [Muirland Oracle](https://github.com/MuirlandOracle/CVE-2019-15107) in this case. Once you clone the repository we can install the requirements using 
+```sh
+pip install -r requirements.txt
+```
+ and make the script executable by using the following command:
+```sh
+sudo chmod +x ./file_name.py
+```
+When we run the python script we get the following:
+![[writeups/wreath/screenshots/initial_access.png]]
+Voila! We got a reverse shell on the target server. We can then answer the questions on the room and try obtain a reverse shell by typing `shell` on the terminal session. We then need to enter our machine's IP address and desired port (I chose 1234) and I spawned a netcat listener on another terminal.
+![[reverse_shell.png]]
+Now that we have a permanent shell we can then proceed to look for the root password hash in the shadow file as shown below
+![[root_user_hash.png]]
+We can then proceed to get the private SSH key for the server so as to be able to maintain our access. 
+![[ssh_private_key.png]]
+
