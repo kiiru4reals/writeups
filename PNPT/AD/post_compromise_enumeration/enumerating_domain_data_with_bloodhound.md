@@ -1,0 +1,1 @@
+Now that we have our file collected from the previous notes, we can upload the zipped file to blood hound and look at the information.
