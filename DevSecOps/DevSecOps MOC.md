@@ -1,0 +1,1 @@
+1. Setting up SAST and SCA with Snyk security [[01. SAST and SCA with Snyk]]
