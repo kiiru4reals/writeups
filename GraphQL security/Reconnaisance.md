@@ -55,6 +55,19 @@ sudo nmap --script=graphql-introspection -sV -p 5013 127.0.0.1
 ```
 - This script is not available on nmap out of the box, to download this you need to get the script from [here](https://github.com/dolevf/nmap-graphql-introspection-nse/blob/master/graphql-introspection.nse) and add it to the `/usr/share/nmap/scripts` directory.
 ![[Pasted image 20240224163416.png]]
+### Introspection using Burpsuite
+- In this case we shall use Postman as our User Agent and send requests to our GraphQL server which shall be intercepted using Burp suite.
+- We shall send a request to our server from Postman as shown below
+![[Pasted image 20240224182217.png]]
+- We intercept the request and send it to the repeater as shown below
+![[Pasted image 20240224182504.png]]
+- When you right click the request pane on the repeater, we have a GraphQL place, where we select "GraphQL > Set introspection query." The request will be modified to what is shown below and send the request
+![[Pasted image 20240224183146.png]]
+- From the response, we have information about the queries, mutations, subscriptions and their respective fields.
+- We can save the response to the sitemap by right clicking the Response pane and selecting "GraphQL > Save GraphQL queries to site map."
+- When we visit the sitemap, we get the following results.
+![[Pasted image 20240224183618.png]]
+
 ### Visualizing introspection
 
 ### Disabled introspection
