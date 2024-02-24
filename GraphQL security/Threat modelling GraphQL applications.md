@@ -10,3 +10,6 @@ GraphQL predominantly uses a `200` status code as a standard response. While thi
 Subscriptions in GraphQL allow continuous monitoring of databases or client-side endpoints, enabling real-time updates. For instance, social media platforms utilize subscriptions to inform users about live stream viewership. However, the use of web sockets for subscriptions introduces security challenges. Encryption of data in transit becomes crucial to thwart potential Man-in-the-Middle attacks. Additionally, vulnerabilities like cross-site WebSocket hijacking must be addressed through proper validation of client origin.
 ### Misusing suggestions
 GraphQL's user-friendly feature of suggesting corrections in case of typos is a double-edged sword. While it simplifies the development process, it also introduces a potential avenue for attackers. Malicious actors could leverage this feature to guess field names in a query, posing a security risk.
+
+Previous: [[01. Introduction to GraphQL]]
+Next: [[Reconnaisance]]
