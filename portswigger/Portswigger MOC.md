@@ -9,7 +9,7 @@
 7. Command injection [[Command injection]]
 ### Directory traversal
 8. Introduction to directory traversal [[Introduction to directory traversal]]
-9. Information disclosure [[Information disclosure]]
+9. Information disclosure [[writeups/portswigger/Information disclosure]]
 ### SQL injection
 10. Introduction and Union based SQL injection [[intro_and_union_based_sql_injection]]
 11. Recon with SQL injection [[recon_with_sql_injection]]
