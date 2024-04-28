@@ -59,9 +59,7 @@ We can proceed to send a recursive query to test on recursiveness as shown below
 ![[Pasted image 20240316130313.png]]
 You can expand this query to make it bigger but it can crash your PC so proceed with caution.
 #### Circular introspection vulnerabilities
-- A circular relationship exists in GraphQL's introspection capabilities.
-- The GraphQL documentation provides a schema for the introspection system.
-- We can use the schema in our case to test for circular relationship on DVGA by running the following query
+A circular relationship exists in GraphQL's introspection capabilities. The GraphQL documentation provides a schema for the introspection system. We can use the schema in our case to test for circular relationship on DVGA by running the following query.
 ```graphql
 query {
   __schema {
@@ -83,9 +81,7 @@ query {
 ```
 If this query is performed repeatedly using the repeater your docker container stops running and you have to spin it up again.
 #### Circular fragment vulnerabilities
-- GraphQL shares logic using fragments, fragments gives you the ability to construct sets of fields and then include them in queries when you need to.
-- GtaphQL states that fragments should not form any cycles includes spreading itself. Otherwise, an operation could infinitely spread or infinitely execute on cycles in the underlying data, but what happens if we do that?
-- On DVGA, we can create a cycle using a fragment on an Object as shown below
+GraphQL shares logic using fragments, fragments gives you the ability to construct sets of fields and then include them in queries when you need to. GraphQL states that fragments should not form any cycles includes spreading itself. Otherwise, an operation could infinitely spread or infinitely execute on cycles in the underlying data, but what happens if we do that? On DVGA, we can create a cycle using a fragment on an Object as shown below
 ```graphql
 query {
 	pastes {
@@ -243,18 +239,28 @@ We can use GraphQL cop to check for possible Denial of Service attack vectors, w
 ![[Pasted image 20240406123747.png]]
 ### Denial of Service countermeasures for GraphQL applications
 #### Use of a Web Application Firewall
-#### Query Cost Analysis
-
-#### Using credit-based rate limiting
-
+Web Application Firewalls are a common solution in preventing Denial of Service attacks as they use rules and signatures to detect malicious traffic based on specific patterns. This solution has become accepted by the indurstry but does has its own shortcomings as GraphQL is not very popular yet so most firewalls are not GraphQL ready from the get go. In as much as they are not GraphQL ready, "generic" Web Application Firewalls can still identify malicious transactions such as Cross site scripting, Command injections and SQL injections. Web Application Firewalls also play the additional role of preventing DOS attacks by employing body size restrictions and throttling.
+#### GraphQL stitching
+Stitching is the process of combining multiple schemas to create one schema. Use of stitches can be used to create an API gateway. This will create one point of securing GraphQL APIs as one can enforce policies and perform rate limiting at this single point sustainably.
 #### Query depth limits
-
-#### Setting Alias limits
-
+Circular queries can be prevented by introduction of query depth limits to prevent Denial of Service attacks induced by circular queries. This can be done by setting a maximum depth configuration using the `max_depth` configuration and specifying a number. This method cannot work independently as multiple recursive queries can cause a Denial of Service.
 #### Field duplication limits
-
+We can use a middleware security analyzer to inspect the incoming query and either reject the query as a whole or consolidating all the repeated field as one query. This can also be achieved by calculating the height of a query. An application can limit the height of a query by specifying how long the query should be lets take an example below:
+```graphql
+query{
+	pastes{
+		owner{
+			id
+			name
+			name
+			name
+			
+		}
+	}
+}
+```
+We can limit the height of this query to two to prevent cases of queries exceeding the height of more than two.
 #### Limiting number of returned records
-
-#### Query allow lists
-
+This is similar to pagination as one can restrict the maximum of records that can be retrieved using one query on the resolver. Doing this on the server-side prevents the client from overriding the limits that have been set.
 #### Implementation of timeouts
+When a query takes a long time to execute, it consumes more resources. To mitigate against this, we can intriduce the use of timeouts which states how long requests take to complete. This is mostly done on the web server layer level as not all GraphQL implementations support this. This is a double-edged sword as one can set a short time frame which might affect legitimate users and can be so long which might give leeway for malicious actors. This method should be used with a pinch of salt as it is not the best countermeasure and should not be used independently.
