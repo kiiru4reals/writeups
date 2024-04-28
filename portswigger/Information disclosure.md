@@ -6,3 +6,5 @@ Information disclosure is a class of web related vulnerabilities where a web app
 4. Developer comments.
 
 Information disclosure can be leveraged by threat actors to perform high severity attacks or in some cases understand how the system works.
+
+Information disclosure in GraphQL is [[writeups/GraphQL security/Information disclosure|Information disclosure]]
