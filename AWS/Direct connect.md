@@ -1,0 +1,3 @@
+This provides a connection between on-prem setups and AWS using very fast network connection options with speeds ranging from 50MBps to 10GBps. 
+This reduces the network coses and increases bandwidth throughput. Direct connect is also more reliable than your typical internet-based connection leading to a more consistent network experience.
+This is facilitated by AWS partners who make the connection between the company and AWS.
