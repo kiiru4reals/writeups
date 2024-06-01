@@ -5,3 +5,4 @@
 5. Race conditions [[race_conditions]]
 6. So you want to get into cyber security [[so_you_want_to_get_into_cybersecurity]]
 7. Why compliance is not a silver bullet to data breaches [[why_compliance_is_not_a_silver_bullet_on_data_breaches]]
+8. Writing technical documentation [[Writing effective documentation]]
