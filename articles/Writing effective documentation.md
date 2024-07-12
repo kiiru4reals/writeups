@@ -137,4 +137,3 @@ Use the same terminology thoughout the documentation to ensure a seamless reader
 7. [Customer interview report template](https://www.atlassian.com/software/confluence/templates/customer-interview-report)
 8. [Writing a Product Requirements Document in 2023](https://www.digitalocean.com/resources/article/product-requirements-document)
 9. [Product roadmap guide: What it is and creating one](https://www.atlassian.com/agile/product-management/product-roadmaps)
-10. 

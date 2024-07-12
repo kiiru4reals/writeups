@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"3c3dcc57fe4a7dd8","x":-120,"y":-360,"width":250,"height":60,"type":"text","text":"Business function"},
+		{"id":"bbdf5904dd946c0f","x":-474,"y":-162,"width":250,"height":60,"type":"text","text":"Practice 1"},
+		{"id":"5dd8d26f8400c14f","x":380,"y":-162,"width":250,"height":60,"type":"text","text":"Practice 3"},
+		{"id":"637f11dfbea0498c","x":-120,"y":-162,"width":250,"height":60,"type":"text","text":"Practice 2"},
+		{"id":"55ee63c3a123cd03","x":-680,"y":100,"width":250,"height":60,"type":"text","text":"Stream A"},
+		{"id":"072655cbc6066cae","x":-241,"y":97,"width":250,"height":60,"type":"text","text":"Stream B"},
+		{"id":"99ddbdc1892b9d3f","x":-1020,"y":269,"width":250,"height":60,"type":"text","text":"Level 1"},
+		{"id":"9d03885cb4b27c30","x":-680,"y":269,"width":250,"height":60,"type":"text","text":"Level 2"},
+		{"id":"1bb95ec5de317f28","x":-354,"y":268,"width":250,"height":60,"type":"text","text":"Level 3"},
+		{"id":"9d36742cfeff3ae8","x":255,"y":97,"width":745,"height":363,"type":"text","text":"### Information\n- This is broken down to 5 funcntions.\n- This led to 15 practices functions\n- Every Practice of fucntions are arranged from the easiest to the hardest practice to implement.\n- It is not possible for one to have 100% security maturity but a company can make tradeoffs based on the risks.\n- Activites for Stream A look at defensive levels and Stream B look at offensive levels."}
+	],
+	"edges":[
+		{"id":"fbbb18d013b7e485","fromNode":"3c3dcc57fe4a7dd8","fromSide":"bottom","toNode":"bbdf5904dd946c0f","toSide":"top"},
+		{"id":"bb8c1b102bd33623","fromNode":"3c3dcc57fe4a7dd8","fromSide":"bottom","toNode":"637f11dfbea0498c","toSide":"top"},
+		{"id":"8bba24408f78b06a","fromNode":"3c3dcc57fe4a7dd8","fromSide":"bottom","toNode":"5dd8d26f8400c14f","toSide":"top"},
+		{"id":"fabeaa9c84db5daf","fromNode":"bbdf5904dd946c0f","fromSide":"bottom","toNode":"55ee63c3a123cd03","toSide":"top"},
+		{"id":"5da0782c308e5c03","fromNode":"bbdf5904dd946c0f","fromSide":"bottom","toNode":"072655cbc6066cae","toSide":"top"},
+		{"id":"188d8c44b61e752c","fromNode":"55ee63c3a123cd03","fromSide":"bottom","toNode":"99ddbdc1892b9d3f","toSide":"top"},
+		{"id":"265bd6cc32d13faf","fromNode":"55ee63c3a123cd03","fromSide":"bottom","toNode":"9d03885cb4b27c30","toSide":"top"},
+		{"id":"c02951e39b652d82","fromNode":"55ee63c3a123cd03","fromSide":"bottom","toNode":"1bb95ec5de317f28","toSide":"top"}
+	]
+}
