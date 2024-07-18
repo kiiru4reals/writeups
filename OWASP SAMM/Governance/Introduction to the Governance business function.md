@@ -1,0 +1,5 @@
+- Governance is the GRC aspect of application security, this can be broken down into three parts they include:
+	- Strategy and metrics
+	- Policy and compliance
+	- Education and guidance
+- Governance is very important as it sets the tone for the rest of the assessment.
