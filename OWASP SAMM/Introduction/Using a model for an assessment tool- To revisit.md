@@ -5,4 +5,7 @@
 	- 1: Activity is done in an ad-hoc manner
 	- 2: Activity is consistent.
 	- 3: There is a process and continously seeks to improve the activity.
+- To conduct an assessment we can use the following tools:
+	- [SAMMWise](https://github.com/owaspsamm/sammwise)
+	- [SAMMY](https://sammy.codific.com)
 - 
