@@ -27,3 +27,6 @@ Do you regularly review and update the strategic plan for application security?
 - Update based on feedback loops from other activities.
 - Publish progress on roadmap activities.
 ```
+
+Previous << [[Introduction to strategy and metrics]]
+Next >> [[Stream B Measure and Improve]]

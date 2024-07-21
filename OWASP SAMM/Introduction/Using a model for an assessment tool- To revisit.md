@@ -1,3 +1,4 @@
+
 - Each activity has one question which makes the total number of questions to be 90.
 - We need to check if the activity is done on the organization.
 - Every question has a maximum of three points. They can be graded as follows:
@@ -8,4 +9,7 @@
 - To conduct an assessment we can use the following tools:
 	- [SAMMWise](https://github.com/owaspsamm/sammwise)
 	- [SAMMY](https://sammy.codific.com)
-- 
+
+
+Previous << [[SAMM structure.canvas|SAMM structure]]
+Next >> [[Scoping]]

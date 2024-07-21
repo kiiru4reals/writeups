@@ -1,15 +1,17 @@
 {
 	"nodes":[
-		{"id":"3c3dcc57fe4a7dd8","x":-120,"y":-360,"width":250,"height":60,"type":"text","text":"Business function"},
-		{"id":"bbdf5904dd946c0f","x":-474,"y":-162,"width":250,"height":60,"type":"text","text":"Practice 1"},
-		{"id":"5dd8d26f8400c14f","x":380,"y":-162,"width":250,"height":60,"type":"text","text":"Practice 3"},
-		{"id":"637f11dfbea0498c","x":-120,"y":-162,"width":250,"height":60,"type":"text","text":"Practice 2"},
-		{"id":"55ee63c3a123cd03","x":-680,"y":100,"width":250,"height":60,"type":"text","text":"Stream A"},
-		{"id":"072655cbc6066cae","x":-241,"y":97,"width":250,"height":60,"type":"text","text":"Stream B"},
-		{"id":"99ddbdc1892b9d3f","x":-1020,"y":269,"width":250,"height":60,"type":"text","text":"Level 1"},
-		{"id":"9d03885cb4b27c30","x":-680,"y":269,"width":250,"height":60,"type":"text","text":"Level 2"},
-		{"id":"1bb95ec5de317f28","x":-354,"y":268,"width":250,"height":60,"type":"text","text":"Level 3"},
-		{"id":"9d36742cfeff3ae8","x":255,"y":97,"width":745,"height":363,"type":"text","text":"### Information\n- This is broken down to 5 funcntions.\n- This led to 15 practices functions\n- Every Practice of fucntions are arranged from the easiest to the hardest practice to implement.\n- It is not possible for one to have 100% security maturity but a company can make tradeoffs based on the risks.\n- Activites for Stream A look at defensive levels and Stream B look at offensive levels."}
+		{"id":"3c3dcc57fe4a7dd8","type":"text","text":"Business function","x":-120,"y":-360,"width":250,"height":60},
+		{"id":"bbdf5904dd946c0f","type":"text","text":"Practice 1","x":-474,"y":-162,"width":250,"height":60},
+		{"id":"5dd8d26f8400c14f","type":"text","text":"Practice 3","x":380,"y":-162,"width":250,"height":60},
+		{"id":"637f11dfbea0498c","type":"text","text":"Practice 2","x":-120,"y":-162,"width":250,"height":60},
+		{"id":"55ee63c3a123cd03","type":"text","text":"Stream A","x":-680,"y":100,"width":250,"height":60},
+		{"id":"072655cbc6066cae","type":"text","text":"Stream B","x":-241,"y":97,"width":250,"height":60},
+		{"id":"99ddbdc1892b9d3f","type":"text","text":"Level 1","x":-1020,"y":269,"width":250,"height":60},
+		{"id":"9d03885cb4b27c30","type":"text","text":"Level 2","x":-680,"y":269,"width":250,"height":60},
+		{"id":"1bb95ec5de317f28","type":"text","text":"Level 3","x":-354,"y":268,"width":250,"height":60},
+		{"id":"9d36742cfeff3ae8","type":"text","text":"### Information\n- This is broken down to 5 funcntions.\n- This led to 15 practices functions\n- Every Practice of fucntions are arranged from the easiest to the hardest practice to implement.\n- It is not possible for one to have 100% security maturity but a company can make tradeoffs based on the risks.\n- Activites for Stream A look at defensive levels and Stream B look at offensive levels.","x":255,"y":97,"width":745,"height":363},
+		{"id":"82152e903ff94766","type":"text","text":"Next >> [[Using a model for an assessment tool- To revisit]]","x":346,"y":720,"width":564,"height":120},
+		{"id":"b5c31fb50a7b244f","x":-930,"y":720,"width":456,"height":120,"type":"text","text":"Previous: [[SDLC overview]]"}
 	],
 	"edges":[
 		{"id":"fbbb18d013b7e485","fromNode":"3c3dcc57fe4a7dd8","fromSide":"bottom","toNode":"bbdf5904dd946c0f","toSide":"top"},

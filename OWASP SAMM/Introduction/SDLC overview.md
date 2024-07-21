@@ -11,3 +11,5 @@
 1. Security is a common initiative.
 2. It is clear to understand what is important to the organization.
 3. Develop or adopt standards, requirements and initiatives.
+
+Next >> [[SAMM structure.canvas|SAMM structure]]
