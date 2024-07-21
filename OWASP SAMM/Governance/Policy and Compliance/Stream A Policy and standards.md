@@ -28,3 +28,7 @@ The acceptance criteria is as follows:
 - Deliver compliance reports to relevant stakeholders.
 - Use the compliance reports to identify improvement areas
 ```
+
+
+Previous << [[Introduction to Policy and compliance]]
+Next >> [[Stream B Compliance management]]

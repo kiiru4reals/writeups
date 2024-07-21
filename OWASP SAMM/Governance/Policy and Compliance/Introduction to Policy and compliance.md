@@ -7,3 +7,6 @@ Procedure: This defines how exactly you will achieve the specific goals which ar
 The two streams are as follows:
 - Policy and compliance
 - Compliance management
+
+Previous << [[Stream B Measure and Improve]]
+Next >> [[Stream A Policy and standards]]
