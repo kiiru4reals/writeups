@@ -7,3 +7,7 @@
 7. Why compliance is not a silver bullet to data breaches [[why_compliance_is_not_a_silver_bullet_on_data_breaches]]
 8. Writing technical documentation [[Writing effective documentation]]
 9. Building an application security program [[Building an Application security program]]
+10. CVE-2022-1026: The Kyocera vulnerability [[CVE-2022-1026_getting_initial_access_through_a_printer]]
+11. Sim card fundamentals [[How does a SIM card work]]
+12. Building a CA [[Setting up a CA using Vault]]
+13. Pre-commit hooks [[03. Pre-commit hooks]]

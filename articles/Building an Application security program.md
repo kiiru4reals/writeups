@@ -55,3 +55,44 @@
 - Develop standards and coding best practices for security and ensure that these standards are continously evolving to suit the emergence of new technologies, programming languages and frameworks. This is done to ensure that applications conform to security best practices and streamline various aspects of the SDLC. 
 - Lastly develop a community that assists team members to be able to learn and share information on emerging trends, new technologies and share solutions to the problems that they have faced. The security team can use this information to also ger insights and get an opportunity to assist other team members on the problems that they may be facing.
 ## Design
+- This step involves the definition of the goals that the application tends to achieve.
+- This is where the application security team gets to point out potential vulnerabilities and provide solutions on how to prevent them.
+- This step involves the following practices:
+	- Threat Assessment
+	- Security requirements
+	- Security architecture
+### Threat Assessment
+- This practice involves identifying and understanding project level risks based on the project requirements and the runtime environment.
+- The two streams in this level include the following:
+	- Application risk profile
+	- Threat modelling
+#### Application risk profile
+- Identify risks in an application using simple methods and demostrate how it will affect the confidentiality, integrity and availability of data. This can be done by asking a set of general questions and categorizing risks through an internal metric or common metrics such as the Common Vulnerability Scoring System(CVSS).
+- The next step would be to further breakdown the risk matrix to focus on all your applications as a company and look at the different effects it has on the confidentiality, integrity and availability of information. At this level, it is encouraged to also look at the privacy risks that are involved in the application. Once this is done, the security team proceeds to set up a risk inventory to manage accountability and give all stakeholders a central point of reference.
+- The final step would be to continously review the application risk profile and make it adapt to the current business needs. All stakeholders should be able to question the application risk profile and make adjustments where necessary. This leads to better representation of the risk profile.
+#### Threat modelling
+- Conduct threat modelling exercise to identify high level threats and come up with mitigation strategies. This can be done with the relevant stakeholders in this project such as the project manager and the security champions. This discussions should be very brief and should be very granular as your application grows. This can be done as a table-top exercise.
+- Decide on a threat modelling methodology that your organization will use to identify threats and possible mitigations. Threat modelling requires a proper understanding of the environment and how the applications work. These threat models should be updated as the application continues to evolve.  
+- The final step is to ensure that your threat modelling is integrated into your SDLC. Threat models should be regularly reviewed and updated in line with the evolution of your application and the lessons that you have learnt. At this level, one can consider to automate bits of threat modelling by embracing threat modelling as code to integrate threat modelling results with your application code.
+### Security requirements
+- This practice involves defining software security requirements that are focused to protect the data processed by your application and the service at large. This second type deals with the requirements that need to be met by third-party vendors and SaaS providers because of the impact this can have on the security of your application. The third part is to ensure that we have  secure libraries and ensure that it is part of the software supply chain stream.
+- The two streams in this level include:
+	- Software requirements.
+	- Supplier security
+#### Software requirements
+- The first step would be to perform a review of the functional requirements for your application and add security requirements based on the desired confidentiality, integrity and availability of your application and the data that it processes. These objectives can relate to functionalities and does not necessarily mean new functionality. These requirements should not be very general and should have a relationship to the application at hand.
+- The next step is to align security requirements with the application's requirements. These requirements should have a certain structure and can be added as an extension to your user stories, Product Requirement Documents and epics. This ensures that practices are taken into account during the development phase. 
+- The last step is to have a requirement elicitation framework that gives clear guidance on the quality of requirements and how to describe them. This empowers the projects team get requirements from the concerned stakeholders efficiently. 
+#### Supplier security
+- An organization out-sourcing an application is mandated with the responsibility of ensuring that their third-party software providers provide security for their software. This can be done by having a checklist that vets the provider on the different security measures that they have implemented. This assists the provider to align themselves with your organization's risk appetite and you are able to meet the software requirements in that particular area.
+- The next step would be to ensure that there is a form of agreement and delegation of responsibilities to the suppliers showing what needs to be done. This can be put in a contract or enshrined in the supplier's SLA showing the roles that need to be done by the supplier. This can slowly evolve into a standard agreement but room for deviation can be provided on a case-by-case basis.
+- The last step would be to align your development processes with the third-party provider. This approach ensures that your applications go through a similar build, verification and deployment process. If this cannot be met you are advised to have compensating controls such as implementing additional tools or having another activity such as threat modeling.
+### Security architecture
+- This stage focuses on securing the different technologies used in the SDLC. This allows the Security champion to be able to decompose all the technologies used and look at the security requirements for each and its implementation.
+- The two streams in this practice include the following:
+	- Architecture Design: This stream focuses on the requirements that are identified that may help in improving the security posture of the software.
+	- Technology management: This focuses on the requirements that need to be implemented to secure the technologies that support the application(s).
+#### Architecture Design 
+- The first step would include be to identify the software requirements of an application based on an agreed set of principles such as the OWASP top 10. The unit working on this application can add some of the features in a way that it takes very little effort without interfering with their development processes.
+- The next step would be to 
+#### Technology management

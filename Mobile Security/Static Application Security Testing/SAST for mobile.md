@@ -2,6 +2,7 @@ To perform this lab we need to install the following:
 1. Mobsf: Mobile Security Framework.
 
 ### Installation
+#### Run on bare metal
 We can clone mobsf from Github by running the following command
 ```sh
 git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF
@@ -14,7 +15,19 @@ We can then run the application by running the following:
 ```
 ./run.sh
 ```
-Once we do this, we can access the application on our browser by entering the following address on the browser
+#### Docker
+For Docker the installation is very fast as a user is required to do the following:
+Pull the image from Dockerhub by running the following command:
+```sh
+docker pull opensecurity/mobile-security-framework-mobsf:latest
+```
+Run the docker image by running the below command:
+```sh
+docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+```
+
+Once we do this, we can access the application on our browser by entering the following address on the browser. 
+**Note: Default login credentials are mobsf/mobsf**
 ```txt
 http://localhost:8000
 ```

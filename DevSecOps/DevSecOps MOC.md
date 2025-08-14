@@ -4,3 +4,5 @@
 4. Docker hardening [[docker_hardening]]
 5. Hashicorp Vault [[00. Vault MOC]] 
 6. Terraform [[Terraform MOC]]
+7. Pre-commit hooks [[03. Pre-commit hooks]]
+8. PASTA Threat modelling [[02. PASTA Threat modelling methodology]]
